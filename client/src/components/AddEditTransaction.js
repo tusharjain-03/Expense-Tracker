@@ -41,7 +41,7 @@ function AddEditTransaction({showAddEditTransactionModal, setShowAddEditTransact
           {loading && <Spinner/>}
           <Form layout="vertical" className="transaction-form" onFinish={onFinish} initialValues={selectedItemForEdit}>
             <Form.Item label="Amount" name="amount">
-              <Input type="number"/>
+              <Input type="number" min="1"/>
             </Form.Item>
 
             <Form.Item label="Type" name="type">
