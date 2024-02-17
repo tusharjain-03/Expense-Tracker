@@ -1,5 +1,4 @@
 const express = require("express");
-require("dotenv").config();
 const dbConnect = require('./dbConnect.js');
 const app = express();
 app.use(express.json());
